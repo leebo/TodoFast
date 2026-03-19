@@ -1,0 +1,295 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "创建 TodoFastApp 入口",
+      "description": "创建 TodoFastApp.swift 和 ContentView.swift",
+      "files": [
+        "TodoFast/TodoFastApp.swift",
+        "TodoFast/ContentView.swift"
+      ],
+      "steps": [
+        "创建 TodoFastApp.swift @main 入口",
+        "配置 SwiftData Container",
+        "创建 ContentView TabView 导航"
+      ],
+      "status": "running",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 2,
+      "title": "SwiftData 模型",
+      "description": "创建 Task, Category, User 模型",
+      "files": [
+        "TodoFast/Models/TaskModel.swift",
+        "TodoFast/Models/CategoryModel.swift"
+      ],
+      "steps": [
+        "创建 TaskModel @Model 类",
+        "创建 CategoryModel @Model 类",
+        "配置模型关系"
+      ],
+      "status": "running",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 3,
+      "title": "任务列表 ViewModel",
+      "description": "创建 TaskListViewModel",
+      "files": [
+        "TodoFast/ViewModels/TaskListViewModel.swift"
+      ],
+      "steps": [
+        "创建 @Observable TaskListViewModel",
+        "实现 @Query 获取任务",
+        "实现筛选和排序"
+      ],
+      "status": "running",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 4,
+      "title": "任务列表 View",
+      "description": "创建 TaskListView 和 TaskRowView",
+      "files": [
+        "TodoFast/Views/TaskListView.swift",
+        "TodoFast/Views/TaskRowView.swift"
+      ],
+      "steps": [
+        "创建 TaskListView 列表",
+        "创建 TaskRowView 行视图",
+        "实现左滑删除"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 5,
+      "title": "添加任务 View",
+      "description": "创建 AddTaskView 表单",
+      "files": [
+        "TodoFast/Views/AddTaskView.swift"
+      ],
+      "steps": [
+        "创建表单视图",
+        "实现优先级选择",
+        "实现日期选择"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 6,
+      "title": "任务详情 View",
+      "description": "创建 TaskDetailView",
+      "files": [
+        "TodoFast/Views/TaskDetailView.swift"
+      ],
+      "steps": [
+        "创建详情视图",
+        "实现编辑功能"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 7,
+      "title": "分类管理",
+      "description": "创建 CategoryView 和 ViewModel",
+      "files": [
+        "TodoFast/Views/CategoryView.swift",
+        "TodoFast/ViewModels/CategoryViewModel.swift"
+      ],
+      "steps": [
+        "创建分类列表",
+        "实现颜色选择"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 8,
+      "title": "设置页面",
+      "description": "创建 SettingsView",
+      "files": [
+        "TodoFast/Views/SettingsView.swift"
+      ],
+      "steps": [
+        "创建设置视图",
+        "实现账号显示"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 9,
+      "title": "API Client",
+      "description": "创建 APIClient 网络封装",
+      "files": [
+        "TodoFast/Services/APIClient.swift"
+      ],
+      "steps": [
+        "创建 APIClient 类",
+        "实现 URLSession 封装",
+        "实现 Token 管理"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 10,
+      "title": "认证服务",
+      "description": "创建 AuthService",
+      "files": [
+        "TodoFast/Services/AuthService.swift",
+        "TodoFast/Views/LoginView.swift"
+      ],
+      "steps": [
+        "创建 AuthService",
+        "实现登录逻辑",
+        "创建 LoginView"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 11,
+      "title": "同步服务",
+      "description": "创建 SyncService",
+      "files": [
+        "TodoFast/Services/SyncService.swift"
+      ],
+      "steps": [
+        "创建 SyncService",
+        "实现离线队列"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 12,
+      "title": "WebSocket 连接",
+      "description": "创建 WebSocketClient",
+      "files": [
+        "TodoFast/Services/WebSocketClient.swift"
+      ],
+      "steps": [
+        "创建 WebSocket Client",
+        "实现连接管理"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 13,
+      "title": "协作功能",
+      "description": "创建分享和评论视图",
+      "files": [
+        "TodoFast/Views/ShareTaskView.swift",
+        "TodoFast/Views/CommentsView.swift"
+      ],
+      "steps": [
+        "创建分享视图",
+        "创建评论视图"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 14,
+      "title": "UI 动画和主题",
+      "description": "创建动画扩展和主题",
+      "files": [
+        "TodoFast/Utils/Animations.swift",
+        "TodoFast/Utils/Theme.swift"
+      ],
+      "steps": [
+        "创建动画扩展",
+        "创建主题配置"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 15,
+      "title": "本地通知",
+      "description": "创建 NotificationService",
+      "files": [
+        "TodoFast/Services/NotificationService.swift"
+      ],
+      "steps": [
+        "创建通知服务",
+        "实现提醒调度"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    },
+    {
+      "id": 16,
+      "title": "项目配置",
+      "description": "创建 Xcode 项目文件和 Info.plist",
+      "files": [
+        "TodoFast/Info.plist",
+        "TodoFast/Assets.xcassets"
+      ],
+      "steps": [
+        "创建 Info.plist",
+        "配置 App 权限"
+      ],
+      "status": "pending",
+      "estimatedMinutes": 5
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "基础架构",
+      "tasks": [
+        1,
+        2,
+        3
+      ],
+      "parallel": false
+    },
+    {
+      "id": 2,
+      "name": "Views",
+      "tasks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "parallel": true
+    },
+    {
+      "id": 3,
+      "name": "Services",
+      "tasks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "parallel": true
+    },
+    {
+      "id": 4,
+      "name": "高级功能",
+      "tasks": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "parallel": true
+    }
+  ],
+  "config": {
+    "maxParallel": 3,
+    "maxRetry": 2,
+    "fixLoopMax": 3,
+    "gitMode": "task"
+  }
+}
